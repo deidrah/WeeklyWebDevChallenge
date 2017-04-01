@@ -1,0 +1,20 @@
+body {
+	background-image: url("../img/background.jpg");
+	background-repeat: repeat-x;
+}
+
+div { 
+	border: 1px solid black; 
+}
+
+header {
+	height: 100px;
+}
+
+.column {
+	width: 50%;
+}
+
+.form h1 {
+	text-align: center;
+}

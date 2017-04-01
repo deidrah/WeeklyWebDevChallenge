@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logobig"><img src="img/logo.png"></div>
+			</div>
+		</header>
+		<div class="container">
+			<div id="column1">
+				<h2>Register form</h2>
+				<div class="form">
+					<form id="register">
+						<div class="form-container">
+							<div class="optinp"><label><i class="fa fa-user"></i><input type="text" class="form-control" placeholder="Username" required></label></div><br>
+							<div class="optinp"><label><i class="fa fa-lock"></i><input type="password" class="form-control" placeholder="Password" required></label></div><br>
+							<div class="optinp"><label><i class="fa fa-lock"></i><input type="password" class="form-control" placeholder="Confirm password" required></label></div><br>
+							<div class="optinp"><label><i class="fa fa-envelope mail"></i><input type="email" class="form-control" placeholder="Email" required></label></div><br>
+							<div class="optinp"><label><i class="fa fa-map-marker"></i>
+								<select name="location" form="register" class="form-control">
+									<option value="poland">Poland</option>
+									<option value="germany">Germany</option>
+									<option value="russia">Russia</option>
+									<option value="other">Other</option>
+								</select>
+							</label></div><br>
+							<div class="optinps">
+							<input type="checkbox" name="checkbox-input" id="checkbox-input" class="checkbox" value="" checked>
+								<label for="checkbox-input">
+									<div class="checkbox-div">
+										<div class="checkbox-inner">
+										</div>
+									</div>
+									I have read and accept conditions of use
+								</label>
+								
+							</div><br>
+							<button type="button" class="success-big">Sign up</button>
+						</div>
+					</form>
+				</div>
+				<h2>Send email</h2>
+				<div class="form">
+					<form>
+							<div class="optinp"><label><i class="fa fa-user"></i><input type="text" class="form-control" placeholder="Your name" required></label></div><br>
+							<div class="optinp"><label><i class="fa fa-envelope mail"></i><input type="email" class="form-control" placeholder="Your Email" required></label></div><br>
+							<div class="optinp">
+								<textarea rows="10" style="resize:none;" required>Type your message...</textarea>
+							</div><br>
+							<div class="optinps">
+							<input type="checkbox" name="checkbox-email" id="checkbox-email" class="checkbox" value="">
+								<label for="checkbox-email">
+									<div class="checkbox-div">
+										<div class="checkbox-inner">
+										</div>
+									</div>
+									Send a copy to my Email
+								</label>
+							</div><br>
+							<button type="button" class="success-big">Send Email</button>
+					</form>
+				</div>
+			</div>
+			<div id="column2">
+				<h2>Sign in form</h2>
+				<div class="form">
+					<form id="sign">
+							<div class="optinp"><label><i class="fa fa-user"></i><input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" required></label></div><br>
+							<div class="optinp"><label><i class="fa fa-lock"></i><input type="Password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required></label></div><br>
+							<div class="optinps">
+							<input type="checkbox" name="checkbox-subscribe" id="checkbox-subscribe" class="checkbox" value="">
+								<label for="checkbox-subscribe">
+									<div class="checkbox-div">
+										<div class="checkbox-inner">
+										</div>
+									</div>
+									Remember me
+								</label>
+							</div><br>
+							<button type="button" class="success-big">Sign in</button>
+					</form>
+				</div>
+					<h2>Recover form</h2>
+					<div class="form">
+					<form id="recover">
+							<div class="optinp"><label><i class="fa fa-envelope mail"></i><input type="email" class="form-control" placeholder="Enter your Email" aria-describedby="basic-addon1" required></label></div><br>
+							<div class="optinp"><label><i id="phone" class="fa fa-mobile"></i><input type="number" class="form-control" placeholder="Enter your Phone number" aria-describedby="basic-addon1" required><label></div><br>
+							<button type="button" class="success">Send</button>
+							<button type="button" class="disabled">Done</button>
+					</form>
+				</div>
+				<h2>Subscribe form</h2>
+				<div class="form">
+					<form id="subscribe">
+							<div class="optinp"><label><i class="fa fa-envelope mail"></i><input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1" required></label></div><br>
+							<button type="button" class="success">Subscribe</button>
+							<button type="button" class="exit">No, thanks</button>
+					</form>
+				</div>
+				<div class="logobig marginlogo">
+					<img src="img/logo2.png">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
