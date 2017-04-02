@@ -11,6 +11,8 @@ header .container {
 
 .container {
 	overflow: hidden;
+	height: auto;
+	margin: 0 auto;
 }
 
 #column1, 
@@ -315,7 +317,12 @@ input[type=checkbox] {
 
 
 @media (min-width: 1300px) {
+
+	.container {
+		width: 1100px;
+	}
+
 	#column1, #column2 {
-		width: 650px;
+		width: 550px;
 	}
 }
