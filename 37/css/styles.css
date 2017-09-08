@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #000; }
+
+header {
+  min-height: 500px;
+  background-image: url("../img/header.png"); }
+  header nav #logo {
+    height: 50px;
+    width: 50px;
+    float: left; }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    float: right; }
+    header nav ul li {
+      display: inline-block; }
