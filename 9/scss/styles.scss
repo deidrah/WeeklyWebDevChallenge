@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300,400,500|Dancing+Script');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #595959 !important;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    #hero {
+        background-image: url("../img/cover_photo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 650px;
+        margin: 15px 15px 0 15px;
+        text-align: center;
+        #hero-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            #logo-text {
+                font-family: 'Dancing Script', cursive;
+                font-size: 33px;
+                p {
+                    margin: 0;
+                    &:last-child {
+                        font-size: 23px;
+                    }   
+                }             
+            }
+            h1 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 400;
+                font-size: 48px;
+                &:after {
+                    content: "";
+                    background-color: #FFF;
+                    height: 3px;
+                    width: 80px;
+                    display: block;
+                    margin: 30px auto 0;
+                }
+            }
+            #under-text {
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        }        
+    }
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+    .bg-light {
+        background-color: #FFF !important;
+    }
+    .navbar-brand {
+        font-family: 'Dancing Script', cursive;
+        color: #595959 !important;
+        font-size: 22px;
+    }
+    .navbar {
+        padding: 0 !important;
+        margin: .5rem 1rem !important;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #595959 !important;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            border-bottom: 2px solid #d07c7c;
+        }
+    }
+}
+
+#about {
+    #about-text {
+        margin: 125px 0;
+        text-align: center;
+    }
+    p {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+}
+
+.section-container {
+    margin: 15px 15px 0 15px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    &:after {
+        content: "";
+        background-color: #d07c7c;
+        height: 3px;
+        width: 60px;
+        display: block;
+        margin: 20px auto 0;
+    }
+}
+
+.grid-one {
+    display: grid;
+ 
+        .grid-item {
+            font-size: 150%;
+            padding: 10px;
+        }
+
+    
+        .one {
+            grid-column: 1 / span 2;
+            background-image: url("../img/work_1.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 765px;
+            height: 360px;
+        }
+        .two {
+            grid-column: 3 ;
+            grid-row: 1 / span 2;
+            background-image: url("../img/work_2.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 440px;
+            height: 720px;
+        }
+        .three {
+            grid-column: 1 ;
+            grid-row: 2 ;
+            background-image: url("../img/work_3.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 360px;
+            height: 360px;
+        }
+        .four {
+            grid-column: 2 ;
+            grid-row: 2 ;
+            background-image: url("../img/work_4.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 360px;
+            height: 360px;
+        }
+}

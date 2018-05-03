@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300,400,500|Dancing+Script");
+body {
+  margin: 0;
+  padding: 0;
+  color: #595959 !important;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden; }
+
+header {
+  width: 100%;
+  overflow: hidden;
+  color: #fff; }
+  header #hero {
+    background-image: url("../img/cover_photo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    margin: 15px 15px 0 15px;
+    text-align: center; }
+    header #hero #hero-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 100%; }
+      header #hero #hero-text #logo-text {
+        font-family: 'Dancing Script', cursive;
+        font-size: 33px; }
+        header #hero #hero-text #logo-text p {
+          margin: 0; }
+          header #hero #hero-text #logo-text p:last-child {
+            font-size: 23px; }
+      header #hero #hero-text h1 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 48px; }
+        header #hero #hero-text h1:after {
+          content: "";
+          background-color: #FFF;
+          height: 3px;
+          width: 80px;
+          display: block;
+          margin: 30px auto 0; }
+      header #hero #hero-text #under-text {
+        font-weight: 400;
+        line-height: 1.5; }
+  header .navbar-expand-lg .navbar-collapse {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  header .bg-light {
+    background-color: #FFF !important; }
+  header .navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    color: #595959 !important;
+    font-size: 22px; }
+  header .navbar {
+    padding: 0 !important;
+    margin: .5rem 1rem !important;
+    border-bottom: 1px solid #ebebeb; }
+  header .navbar-light .navbar-nav .nav-link {
+    color: #595959 !important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent; }
+    header .navbar-light .navbar-nav .nav-link:hover {
+      border-bottom: 2px solid #d07c7c; }
+
+#about #about-text {
+  margin: 125px 0;
+  text-align: center; }
+
+#about p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.5; }
+
+.section-container {
+  margin: 15px 15px 0 15px;
+  width: 70%;
+  margin: 0 auto; }
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center; }
+  h2:after {
+    content: "";
+    background-color: #d07c7c;
+    height: 3px;
+    width: 60px;
+    display: block;
+    margin: 20px auto 0; }
+
+.grid-one {
+  display: grid; }
+  .grid-one .grid-item {
+    font-size: 150%;
+    padding: 10px; }
+  .grid-one .one {
+    grid-column: 1 / span 2;
+    background-image: url("../img/work_1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 765px;
+    height: 360px; }
+  .grid-one .two {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    background-image: url("../img/work_2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 440px;
+    height: 720px; }
+  .grid-one .three {
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url("../img/work_3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 360px;
+    height: 360px; }
+  .grid-one .four {
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url("../img/work_4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 360px;
+    height: 360px; }
