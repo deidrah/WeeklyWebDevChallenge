@@ -18,7 +18,7 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
 		items: 1,
-        autoplay: true,
-        loop: true,
+        autoplay: false,
+        loop: false,
 	});
 });

@@ -1,8 +1,8 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min";
 @import "../node_modules/owl.carousel/dist/assets/owl.carousel";
 @import "../node_modules/owl.carousel/dist/assets/owl.theme.default.min";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
 body {
     background-color: #fff;
@@ -18,23 +18,102 @@ body {
 #carouselOne {
     position: absolute;
     top: 0;
-
+    color: #fff;
+    font-weight: 300;
+    
     .slide {
+        overflow: hidden;
         background: url('../img/heroImg.png') no-repeat;
         background-size: cover;
         background-position: center;
-        height: 600px;
+        height: 700px;
         width: 100%;
+        div {
+            text-align: center;
+            margin-top: 250px;
+            #sloganOne {
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-weight: 300;
+            }
+            #sloganTwo {
+                font-size: 3rem;
+                text-transform: uppercase;
+                font-family: 'Lato', sans-serif;
+                font-weight: 900;
+            }
+            #sloganThree {
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+            button {
+                border: 2px solid #fff;
+                text-transform: uppercase;
+                background-color: transparent;
+                margin-top: 20px;
+                padding: 10px 35px;
+                transition: .3s;
+                a {
+                    color: #fff;
+                }
+                a:active, a:hover {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+            button:hover {
+                background-color: #fff;
+                cursor: pointer;
+                a {
+                    color: #000;
+                }
+            }
+        }
     }
-    
+    .owl-dots {
+        margin-top: -70px !important;
+        position: relative;
+        span {
+            background-color: #fff;
+            border: 2px solid transparent;
+        }
+
+        .owl-dot.active span, .owl-dot:hover span {
+            background-color: transparent;
+            box-shadow: 0 0 0 1pt #fff;
+
+        }
+    }
    
 }
 
 header {
     width: 100%;
     color: #fff;
+    font-weight: 300;
+    
+    nav {
+        margin-top: 10px;
+    }
+
     .navbar-light .navbar-nav .nav-link {
-            color: #fff;
+        color: #fff;
+        font-size: 0.9rem;
+        border: 1px solid transparent;
+        transition: .3s;
+    }
+
+    .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        background-color: #fff;
+        border: 1px solid #000;
+    }
+
+    ul {
+        li + li {
+            margin-left: 50px;
+        }
     }
     .fixed-top {
         position: relative;
