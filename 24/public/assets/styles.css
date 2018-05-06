@@ -7382,7 +7382,10 @@ body {
     position: relative; }
     #carouselOne .owl-dots span {
       background-color: #fff;
-      border: 2px solid transparent; }
+      border: 2px solid transparent;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
     #carouselOne .owl-dots .owl-dot.active span, #carouselOne .owl-dots .owl-dot:hover span {
       background-color: transparent;
       -webkit-box-shadow: 0 0 0 1pt #fff;
@@ -7391,7 +7394,8 @@ body {
 header {
   width: 100%;
   color: #fff;
-  font-weight: 300; }
+  font-weight: 300;
+  height: 700px; }
   header nav {
     margin-top: 10px; }
   header .navbar-light .navbar-nav .nav-link {
@@ -7413,3 +7417,182 @@ header {
     background: url("../img/logo.png") no-repeat;
     width: 126px;
     height: 34px; }
+
+section {
+  margin: 30px 0; }
+
+h2 {
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -1px; }
+
+h2:before {
+  content: "";
+  background-color: #dc0000;
+  height: 3px;
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px; }
+
+h2:after {
+  content: "";
+  background-color: #dc0000;
+  height: 3px;
+  width: 100px;
+  display: block;
+  margin: 20px auto 0; }
+
+#sectionOne #photoOne {
+  background-image: url("../img/col-one.png"); }
+
+#sectionOne #photoTwo {
+  background-image: url("../img/col-two.png"); }
+
+#sectionOne #photoThree {
+  background-image: url("../img/col-three.png"); }
+
+#sectionOne #photoFour {
+  background-image: url("../img/col-four.png"); }
+
+#sectionOne #photoFive {
+  background-image: url("../img/col-five.png"); }
+
+#sectionOne .collections {
+  margin-top: 30px; }
+
+#sectionOne .collection {
+  width: 100%;
+  margin: 0;
+  height: 30vw;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%; }
+
+#sectionOne .collection:hover {
+  background-size: 140%; }
+
+#sectionOne .collection:after {
+  background-color: rgba(30, 31, 34, 0.5);
+  opacity: 1;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
+#sectionOne .collection:hover:after {
+  background-color: transparent; }
+
+#sectionOne .collection:before {
+  position: absolute;
+  content: attr(data-content);
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -1px;
+  font-size: 2rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 3px solid #fff;
+  margin: 20px; }
+
+#sectionOne .collection:hover:before {
+  color: transparent;
+  opacity: 0; }
+
+#sectionOne .banners {
+  margin-top: 25px; }
+
+#sectionOne .banner {
+  width: 100%;
+  margin: 0;
+  height: 30vw;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%; }
+
+#sectionOne .banner:hover {
+  background-size: 140%; }
+
+#sectionOne .banner:after {
+  background-color: rgba(30, 31, 34, 0.5);
+  opacity: 1;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
+#sectionOne .banner:hover:after {
+  background-color: transparent; }
+
+#sectionOne .banner:before {
+  position: absolute;
+  content: attr(data-content);
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 5vh;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin: 15vh; }
+
+#sectionOne .banner:hover:before {
+  color: transparent;
+  opacity: 0; }
