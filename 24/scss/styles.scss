@@ -20,7 +20,6 @@ body {
     top: 0;
     color: #fff;
     font-weight: 300;
-    
     .slide {
         overflow: hidden;
         background: url('../img/heroImg.png') no-repeat;
@@ -334,13 +333,7 @@ h2:after {
         width: 100%;
         height: 500px;
     }
-    h3 {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.4rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #dc0000;
-    }
+    
     .description {
         padding-left: 10px;
         p {
@@ -372,6 +365,107 @@ h2:after {
     }
 }
 
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #dc0000;
+    margin-top: 20px;
+}
+
 .upper {
     text-transform: uppercase;
+}
+
+#sectionThree {
+    #blogOne {
+        background-image: url('../img/blogOne.png');
+    }
+    #blogTwo {
+        background-image: url('../img/blogTwo.png');
+    }
+    .blogImg {
+        width: 100%;
+        height: 400px;
+    }
+
+    .owl-item + .owl-item {
+        padding-left: 20px;
+    }
+
+    .slide {
+        button {
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid #000;
+            padding: 10px 25px;
+            margin: 10px 0;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+        .shortBlog {
+            color: #b6b6b6;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 0.2px;
+            border-top: 1px solid #ecf0f1;
+            border-bottom: 1px solid #ecf0f1;
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+        .tags {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+       
+    }
+    .owl-prev {
+        position: absolute;
+        top: 200px;
+        left: -90px;
+    }
+
+    .owl-nav button {
+        font-family: sans-serif;
+        font-weight: 300;
+        cursor: pointer;
+        color: #c1c1c1;
+        font-size: 90px;
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    
+    .owl-next {
+        position: absolute;
+        top: 200px;
+        right: -90px;
+        
+    }
+}
+
+#subscribe {
+    background-image: url('../img/subscribtion.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+}
+ 
+footer {
+    #madeBy {
+        text-align: center;
+        color: #9a9a9a;
+        font-family: 'Lato', sans-serif;
+        margin: 40px 0;
+    }
+    #heart {
+        width: 20px;
+        height: 16px;
+        margin: 0 5px;
+        background-image: url('../img/heart.png');
+        display: inline-block;
+    }
 }
