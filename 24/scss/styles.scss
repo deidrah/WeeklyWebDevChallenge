@@ -1,5 +1,5 @@
 $fa-font-path: "./fonts";
-
+@import "_mediaqueries";
 @import "../node_modules/font-awesome/scss/font-awesome";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min";
 @import "../node_modules/owl.carousel/dist/assets/owl.carousel";
@@ -13,10 +13,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-}
-
-.container {
-    width: 80% !important;
 }
 
 #carouselOne {
@@ -76,7 +72,6 @@ body {
         }
     }
     .owl-dots {
-        margin-top: -70px !important;
         position: relative;
         span {
             background-color: #fff;
@@ -296,7 +291,7 @@ h2:after {
         padding: 5vh;
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
-        margin: 15vh;
+        margin: 10vh;
     }
     
     .banner:hover:before {
@@ -310,8 +305,7 @@ h2:after {
     overflow: hidden;
     background-image: url('../img/background.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 150%;
+    background-size: cover;
 
     #carouselTwo {
         margin: 50px 0;
@@ -339,7 +333,12 @@ h2:after {
     }
     
     .description {
-        padding-left: 10px;
+        margin-left: 10px;
+        .collectionRow {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+        }
         p {
             color: #777; 
             font-size: 1rem;
@@ -362,10 +361,15 @@ h2:after {
             padding: 10px 20px;
             margin: 10px 0;
             text-transform: uppercase;
-            margin-left: 20px;
+            transition: .3s;
+            &:hover {
+                background-color: #fff !important;
+            }
         }
-       
         
+    }
+    .activeButton {
+        background-color: #fff !important;
     }
 }
 
@@ -392,10 +396,8 @@ h3 {
     .blogImg {
         width: 100%;
         height: 400px;
-    }
-
-    .owl-item + .owl-item {
-        padding-left: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .slide {
@@ -408,6 +410,19 @@ h3 {
             font-weight: 700;
             font-size: 13px;
             text-transform: uppercase;
+            transition: .3s;
+            a {
+                color: #000;
+            }
+            &:hover {
+                background-color: #000;
+                cursor: pointer;
+                a {
+                color: #fff;
+                text-decoration: none;
+                }
+            }
+
         }
         .shortBlog {
             color: #b6b6b6;
@@ -448,6 +463,20 @@ h3 {
         top: 200px;
         right: -90px;
         
+    }
+    .owl-dots {
+        margin: 40px;
+        span {
+            background-color: #777;
+            border: 2px solid transparent;
+            transition: .3s;
+        }
+
+        .owl-dot.active span, .owl-dot:hover span {
+            background-color: transparent;
+            box-shadow: 0 0 0 1pt #dc0000;
+
+        }
     }
 }
 
@@ -505,6 +534,12 @@ h3 {
             text-transform: uppercase;
             font-weight: 900;
             font-size: 14px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
         }
     }
 }

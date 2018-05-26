@@ -1,0 +1,146 @@
+@media only screen and (max-width: 767px) {
+    .navbar-light .navbar-toggler {
+        color: #fff !important;
+    }
+    .navbar-collapse {
+        background-color: #fff !important;
+    }
+    header .navbar-light .navbar-nav .nav-link {
+        color: #000 !important;
+    }
+    #carouselOne {
+    .slide {
+        height: 600px !important;
+        div {
+            margin-top: 120px !important;
+        }
+    }
+}
+
+#sectionTwo {
+.description {
+    .collectionRow {
+        width: 240px !important;
+    }
+    button {
+        padding: 10px 15px !important;
+    }
+}
+.itemOne {
+    height: 300px !important;
+}
+}
+
+#sectionThree {
+    .blogImg {
+        display: none;
+    }
+}
+
+#subscribe {
+    .input-group {
+        width: 100% !important;
+    }
+    #form {
+        flex-wrap: wrap;
+        button {
+            margin: 5px auto !important;            
+        }
+
+    }
+    #subscribeContainer {
+        padding: 30px 0 !important;
+    }
+}
+
+} 
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    #carouselOne {
+        .slide {
+            height: 600px !important;
+            div {
+                margin-top: 200px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    header {
+        ul {
+            li {
+                margin-left: 5px !important;
+            }
+        }
+        height: 600px !important;
+        
+    }
+    #carouselOne {
+        .owl-dots {
+        margin-top: -50px !important;
+        }
+        #sloganOne, #sloganThree {
+            font-size: 1.2rem !important;
+        }
+        #sloganTwo {
+            font-size: 2rem !important; 
+        }
+    }
+    #sectionOne {
+        .col {
+            flex-basis: auto !important;
+        }
+        .collection {
+            height: 40vh !important;
+        }
+        .banner {
+            height: 40vh !important;
+        &:before {
+            padding: 2vh !important;
+            margin: 9vh !important;
+            font-size: 1rem !important;
+        }
+
+    }
+    }
+    #sectionTwo {
+        .col {
+            flex-basis: auto !important;
+        }
+        .description { 
+            .row {
+                margin: 0 !important;
+            }
+        }
+        .itemOne {
+            background-size: contain !important;
+        }
+    }
+    .container {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    #carouselOne .owl-dots {
+        margin-top: -70px;
+    }
+    
+    }
+
+@media only screen and (min-width: 1600px) {
+    #sectionOne {
+        .collection {
+            height: 20vh !important;
+        }
+        .banner {
+            height: 20vh !important;
+            &:before {
+                margin: 5vh !important;
+                padding: 2vh !important;
+            }
+        }
+    }
+
+}
